@@ -1,58 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso de Desenvolvimento Web</title>
-  </head>
-  <body>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Felipe Barbosa">
+    <meta name="description" content="Exemplo de listas em HTML">
+    <meta name="keywords" content="HTML, listas, ordenada, não ordenada, descrição">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+</head>
+<body>
 
-    <header>
-      <h1>Curso de Desenvolvimento Web</h1>
-    </header>
+   <h1 id="topo">Listas</h1>
 
-    <main>
+   <details>
+       <summary>Lista Ordenada</summary>
+       <ol>
+        <li>Abacaxi</li>
+        <li>Limão</li>
+        <li>Laranja
+            <ol>
+                <li>Pera</li>
+                <li>Bahia</li>
+            </ol>
+        </li>
+       </ol>
+      
+   </details>
 
-      <section>
-        <p>
-          O curso de Desenvolvimento Web tem como objetivo ensinar tecnologias
-          modernas para criação de sites e sistemas web.
-        </p>
-      </section>
+   <details>
+       <summary>Lista Não Ordenada</summary>
+       <ul>
+        <li>Abacaxi</li>
+        <li>Limão</li>
+        <li>Laranja
+            <ul>
+                <li>Pera</li>
+                <li>Bahia</li>
+            </ul>
+        </li>
+       </ul>
+      
+   </details>
 
-      <section>
-        <h2>Conteúdo do Curso</h2>
-        <ul>
-          <li>HTML básico e semântico</li>
-          <li>CSS e layout responsivo</li>
-          <li>Introdução ao JavaScript</li>
-          <li>Versionamento com Git</li>
-        </ul>
-      </section>
+   <details>
+       <summary>Diferentes tipos de listas ordenadas</summary>
+       <ol type="A">
+        <li>Morango</li>
+        <li>Maçã
+            <ol type="i">
+                <li>Vermelha</li>
+                <li>Verde</li>
+            </ol>
+        </li>
+        <li>Cereja</li>
+       </ol>
+   
+   </details>
 
-      <section>
-        <h2>Informações Importantes</h2>
-        <ul>
-          <li><strong>Duração:</strong> 3 meses</li>
-          <li><strong>Carga horária:</strong> 120 horas</li>
-          <li><strong>Certificado</strong> incluso</li>
-        </ul>
-      </section>
+   <details>
+       <summary>Diferentes tipos de listas não ordenadas</summary>
+       <ul type="circle">
+        <li>Morango</li>
+        <li>Maçã
+            <ul type="square">
+                <li>Vermelha</li>
+                <li>Verde</li>
+            </ul>
+        </li>
+        <li>Cereja</li>
+       </ul>
+    
+   </details>
 
-      <section>
-        <h2>Inscrição</h2>
-        <p>Inscrições podem ser realizadas por meio de:</p>
-        <ol>
-          <li>Formulário enviado por e-mail</li>
-          <li>Comparecimento presencial à secretaria</li>
-        </ol>
-      </section>
+   <details>
+       <summary>Lista de Descrição</summary>
+       <dl>
+        <dt>Abacaxi</dt>
+            <dd>Fruta ácida de tom amarelado e casca dura.</dd>
+        <dt>Limão</dt>
+            <dd>Fruta ácida e azeda de tom verde.</dd>
+        <dt>Laranja</dt>
+            <dd>Fruta ácida de cor laranja e doce.</dd>
+       </dl>
+   </details>
 
-    </main>
+   <a href="#topo">Voltar ao topo</a>
 
-    <footer>
-      <p>&copy; 2026 Escola de Tecnologia. Todos os direitos reservados.</p>
-    </footer>
-
-  </body>
+</body>
 </html>
